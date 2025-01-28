@@ -28,7 +28,7 @@ const tvShows = {
       },
       color: "#FFD700", // Custom background color
       textColor: "#000000", // Custom text color
-      icon: "🟡" // Emoji icon
+      icon: "🍩" // Emoji icon
     },
     "Simpsons": {
       seasons: {
@@ -70,26 +70,7 @@ const tvShows = {
       },
       color: "#FFD700", // Custom background color
       textColor: "#000000", // Custom text color
-      icon: "🟡" // Emoji icon
-    },
-    "Big bang theory": {
-      seasons: {
-        1: { episodes: 17, excluded: [] },
-        2: { episodes: 23, excluded: [] },
-        3: { episodes: 23, excluded: [] },
-        4: { episodes: 24, excluded: [] },
-        5: { episodes: 24, excluded: [] },
-        6: { episodes: 24, excluded: [] },
-        7: { episodes: 24, excluded: [] },
-        8: { episodes: 24, excluded: [] },
-        9: { episodes: 24, excluded: [] },
-        10: { episodes: 24, excluded: [] },
-        11: { episodes: 24, excluded: [] },
-        12: { episodes: 24, excluded: [] }
-      },
-      color: "#FF6347", // Custom background color
-      textColor: "#FFFFFF", // Custom text color
-      icon: "🟠"
+      icon: "🍺" // Emoji icon
     },
     "Futurama": {
       seasons: {
@@ -101,7 +82,7 @@ const tvShows = {
       },
       color: "#E05D57", // Custom background color
       textColor: "#FFFFFF", // Custom text color
-      icon: "🔴"
+      icon: "🚀"
     },
     "South Park": {
       seasons: {
@@ -134,7 +115,55 @@ const tvShows = {
       },
       color: "#32CD32", // Custom background color
       textColor: "#FFFFFF", // Custom text color
-      icon: "🟢"
+      icon: "❄️"
+    },
+    "Big bang theory": {
+      seasons: {
+        1: { episodes: 17, excluded: [] },
+        2: { episodes: 23, excluded: [] },
+        3: { episodes: 23, excluded: [] },
+        4: { episodes: 24, excluded: [] },
+        5: { episodes: 24, excluded: [] },
+        6: { episodes: 24, excluded: [] },
+        7: { episodes: 24, excluded: [] },
+        8: { episodes: 24, excluded: [] },
+        9: { episodes: 24, excluded: [] },
+        10: { episodes: 24, excluded: [] },
+        11: { episodes: 24, excluded: [] },
+        12: { episodes: 24, excluded: [] }
+      },
+      color: "#FF6347", // Custom background color
+      textColor: "#FFFFFF", // Custom text color
+      icon: "🧠"
+    },
+    "Malcolm": {
+      seasons: {
+        1: { episodes: 16, excluded: [] },
+        2: { episodes: 25, excluded: [] },
+        3: { episodes: 22, excluded: [] },
+        4: { episodes: 22, excluded: [] },
+        5: { episodes: 22, excluded: [] },
+        6: { episodes: 22, excluded: [] },
+        7: { episodes: 22, excluded: [] }
+      },
+      color: "#FF6347", // Custom background color
+      textColor: "#FFFFFF", // Custom text color
+      icon: "🏠"
+    },
+    "Brooklyn 99": {
+      seasons: {
+        1: { episodes: 22, excluded: [] },
+        2: { episodes: 23, excluded: [] },
+        3: { episodes: 23, excluded: [] },
+        4: { episodes: 22, excluded: [] },
+        5: { episodes: 22, excluded: [] },
+        6: { episodes: 18, excluded: [] },
+        7: { episodes: 13, excluded: [] },
+        8: { episodes: 10, excluded: [] }
+      },
+      color: "#0056B3", // Custom background color
+      textColor: "#FFFFFF", // Custom text color
+      icon: "👮"
     }
   };
   
@@ -177,7 +206,7 @@ const tvShows = {
     const button = document.createElement("button");
     button.style.backgroundColor = color; // Apply custom background color
     button.style.color = textColor; // Apply custom text color
-    button.innerHTML = `<span class="icon">${icon}</span> ${showName}`; // Add icon and name
+    button.innerHTML = `${showName} <span class="icon">${icon}</span>`; // Add icon and name
   
     // Add click event to the button
     button.addEventListener("click", () => {
