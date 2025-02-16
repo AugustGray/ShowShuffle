@@ -30,6 +30,25 @@ const tvShows = {
       textColor: "#000000", // Custom text color
       icon: "🍩" // Emoji icon
     },
+    "Isaac's Simpsons": {
+      seasons: {
+        1: { episodes: 13, excluded: [] },
+        2: { episodes: 22, excluded: [] },
+        3: { episodes: 24, excluded: [] },
+        4: { episodes: 22, excluded: [] },
+        5: { episodes: 22, excluded: [] },
+        6: { episodes: 25, excluded: [] },
+        7: { episodes: 25, excluded: [] },
+        8: { episodes: 25, excluded: [] },
+        9: { episodes: 25, excluded: [] },
+        10: { episodes: 23, excluded: [] },
+        11: { episodes: 22, excluded: [] },
+        12: { episodes: 21, excluded: [] }
+      },
+      color: "#FFD700", // Custom background color
+      textColor: "#000000", // Custom text color
+      icon: "🛋️" // Emoji icon
+    },
     "Simpsons": {
       seasons: {
         1: { episodes: 13, excluded: [] },
