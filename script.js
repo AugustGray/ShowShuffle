@@ -1,6 +1,6 @@
 // Example data structure
 const tvShows = {
-    "Comida Rapida": {
+    "Simpsons Classic": {
       seasons: {
         2: { episodes: 22, excluded: [] },
         3: { episodes: 24, excluded: [] },
