@@ -27,7 +27,7 @@ const tvShows = {
         24: { episodes: 22, excluded: [] }
       },
       color: "#FFD700", // Custom background color
-      textColor: "#000000", // Custom text color
+      textColor: "#212428", // Custom text color
       icon: "🍩" // Emoji icon
     },
     "Isaac's Simpsons": {
@@ -46,7 +46,7 @@ const tvShows = {
         12: { episodes: 21, excluded: [] }
       },
       color: "#FFD700", // Custom background color
-      textColor: "#000000", // Custom text color
+      textColor: "#212428", // Custom text color
       icon: "🛋️" // Emoji icon
     },
     "Simpsons": {
@@ -88,7 +88,7 @@ const tvShows = {
         35: { episodes: 18, excluded: [] }
       },
       color: "#FFD700", // Custom background color
-      textColor: "#000000", // Custom text color
+      textColor: "#212428", // Custom text color
       icon: "🍺" // Emoji icon
     },
     "Futurama": {
@@ -243,26 +243,16 @@ const tvShows = {
     resultElement.textContent = result;
   });
 
-  const darkModeToggle = document.getElementById("dark-mode-toggle");
-const body = document.body;
-
-// Check local storage to keep mode persistent
-if (localStorage.getItem("dark-mode") === "enabled") {
-  body.classList.add("dark-mode");
-  darkModeToggle.textContent = "☀️";
+const themeToggleBtn = document.getElementById('theme-toggle');
+const htmlEl = document.documentElement;
+const storedTheme = localStorage.getItem('theme');
+if (storedTheme) {
+htmlEl.setAttribute('data-theme', storedTheme);
 }
-
-// Toggle dark mode
-darkModeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-
-  // Save preference in local storage
-  if (body.classList.contains("dark-mode")) {
-    localStorage.setItem("dark-mode", "enabled");
-    darkModeToggle.textContent = "☀️";
-  } else {
-    localStorage.setItem("dark-mode", "disabled");
-    darkModeToggle.textContent = "🌒";
-  }
+themeToggleBtn.addEventListener('click', () => {
+const currentTheme = htmlEl.getAttribute('data-theme');
+const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+htmlEl.setAttribute('data-theme', newTheme);
+localStorage.setItem('theme', newTheme);
 });
   
