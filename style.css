@@ -210,5 +210,9 @@ body {
     button {
       font-size: 16px;
     }
+    #theme-toggle {
+      bottom: auto;
+      top: 1.5rem;
+    }
   }
   
